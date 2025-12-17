@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Konum Sahteleme"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Selected Districts Display -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seçili İlçeler:"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/selectedDistrictsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Henüz ilçe seçilmedi"
+            android:textSize="14sp"
+            android:padding="12dp"
+            android:background="#F0F0F0"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/selectDistrictButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="İlçe Seç"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Update Interval -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Güncelleme Aralığı:"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/intervalValueText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5 dakika"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp" />
+
+        <SeekBar
+            android:id="@+id/updateIntervalSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="30"
+            android:progress="5"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Service Controls -->
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="❌ Konum servisi pasif"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="12dp"
+            android:background="#F0F0F0"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/startServiceButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Başlat"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/stopServiceButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Durdur"
+                android:enabled="false" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚠️ Geliştirici seçeneklerinden bu uygulamayı sahte konum uygulaması olarak seçin."
+            android:textSize="12sp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_marginTop="16dp"
+            android:padding="8dp"
+            android:background="#FFF3E0" />
+
+    </LinearLayout>
+</ScrollView>

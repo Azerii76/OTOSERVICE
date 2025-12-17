@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OtoService</string>
+    <string name="accessibility_service_description">OtoService seçtiğiniz mesajlaşma uygulamalarından gelen mesajlara otomatik yanıt göndermek için Erişilebilirlik izni kullanır. Bildirimler kapalı olsa bile arka planda çalışabilir.</string>
+</resources>
